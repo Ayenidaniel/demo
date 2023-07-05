@@ -7,6 +7,7 @@ function App() {
   const[dropdown2, setDropdown2] = useState(false)
   const[dropdown3, setDropdown3] = useState(false)
   const[dropdown4, setDropdown4] = useState(false)
+ 
 
   const open = () => {
     setDropdown(true)
@@ -32,320 +33,365 @@ function App() {
    const cls = () => {
     setDropdown3(false)
  }
+  const o = () => {
+    setDropdown4(true)
+ }
+   const cl = () => {
+    setDropdown4(false)
+ }
   return (
     
     <div className="  ">
+      {/* 1 */}
+      <div className="lg:flex ">
+        <div className="basis-[60%] ">
+          <div className=" py-[80px] px-[30px] bg-[#1f1f1f] text-white ">
+            <h3 className='text-[40px] md:text-[60px] text-left pb-[20px]  ' >
+            The best online coaching platform to support your audience
+            </h3>
+            
+            <div className="lg:grid lg:grid-cols-2 flex flex-col lg:items-start text-center lg:content-start justify-items-center my-0 mx-auto ">
+              <div className='flex pb-[25px] text-[15px] '>  <img className=" pr-[10px]" src = {require('./assets/icn.png')} alt="" />Easy to use, no-code platform</div>
+              <div className='flex pb-[25px] text-[15px]  '><img className=" pr-[10px] " src = {require('./assets/icn.png')} alt="" />Customizable client onboarding</div>
+              <div className='flex pb-[25px] text-[15px] '><img className="  pr-[10px]" src = {require('./assets/icn.png')} alt="" />Seamless management and scheduling</div>
+            </div>
 
-      <div className="bg-[#20c997] grid grid-cols-1 lg:grid-cols-2 bg-">
-        <div className="text-left p-[20px] md:p-[60px] ">
-          <h2 className='text-[25px] pb-[20px] lg:text-[35px] md:px[60px] xl:text-[50px] xl:pr-[65px] '>Digital downloads:The simplest way to 
-            sell your knowledge
-          </h2>
-          <p className='text-[12px] lg:text-[16px] pb-[15px] xl:text-[20px] '>
-          Start your knowledge business, grow your audience, or add a new revenue stream—all with digital downloads on Teachable.
-          </p>
-          <button className='bg-[#363636] rounded-lg px-[20px] py-[10px] rounded-lg flex justify-center my-0 mx-auto w-full text-center text-white lg:w-auto lg:justify-start lg:m-0'>join for free</button>
+            <div className="">
+            <h3>Enter your email</h3>
+              <div className="lg:grid gap-[20px] lg:grid-cols-2 ">
+                <div className="">
+                  <input className='w-full p-[15px] mb-[25px] lg:m-0 mt-[10px] ' type="email" placeholder="hello@example.com" id="" />
+                </div>
+                <div className="">
+                <button className='bg-[#20c997] rounded-lg px-[20px] py-[15px] flex justify-center m-0 w-full my-0 mx-auto text-center  text-white '>join for free</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
-        <div className="p-[20px] lg:p-[60px] ">
-          <img className="w-[100%] h-[100%] " src = {require('./assets/1.avif')} alt="" />
-
-        </div>
-      </div>
-
-      <div className="bg-[#1f1f1f] text-white px-[20px] py-[50px] ">
-        <h3 className='text-[30px] px-[20px] lg:text-[40px] pb-[20px] '>Sell just about anything</h3>
-        <p className='pt-[20px] pb-[10px] px-[20px] text-[20px] lg:text-[25px] ' > With digital downloads on Teachable, your selling potential is limitless. Create, upload, and sell:</p>
-        <ul className='list-disc list-inside'>
-          <li className='pb-[20px] px-[30px] text-[16px] lg:text-[20px] ' >Podcasts</li>
-          <li className='pb-[20px] px-[30px] text-[16px] lg:text-[20px] ' >Ebooks</li>
-          <li className='pb-[20px] px-[30px] text-[16px] lg:text-[20px] ' > How-to guides</li>
-          <li className='pb-[20px] px-[30px] text-[16px] lg:text-[20px] ' >Customizable templates</li>
-          <li className='pb-[20px] px-[30px] text-[16px] lg:text-[20px] ' >Newsletters</li>
-          <li className='pb-[20px] px-[30px] text-[16px] lg:text-[20px] ' >Music and audio</li>
-          <li className='pb-[20px] px-[30px] text-[16px] lg:text-[20px] ' >Spreadsheets</li>
-          <li className='pb-[20px] px-[30px] text-[16px] lg:text-[20px] ' >And so much more</li>
-        </ul>
-      </div>
-
-    <div className="bg-[#127062] text-white py-[60px] ">
-      <h1 className='text-center text-[24px] px-[120px] pb-[15px] md:text-[30px] '>
-      The perfect place to start
-      </h1>
-      <h1 className='text-[24px] md:text-[30px] text-center px-[60px] md:px-[150px] pb-[40px] '>Here’s how digital downloads can help grow your business.</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 md:gap-[20px] xl:gap-[35px] md:px-[30px] px-[60px] ">
-
-        <div className="pb-[30px]">
-          <h3 className='text-[20px] font-[600] pb-[20px]  ' >
-          Start small
-          </h3>
-          <p>
-          Test out potential interest in your knowledge business and see what works by selling a digital download.
-          </p>
-        </div>
-       <div className="pb-[30px]">
-          <h3 className='text-[20px] font-[600] pb-[20px]  ' >
-          Grow your audience
-          </h3>
-          <p>
-          Create a digital download and start selling bite-sized content to attract new students to your business—or offer for free as a lead magnet.      </p>
-
+        <div className="basis-[40%] ">
+         <img className="w-[100%] h-[100%] " src = {require('./assets/c.avif')} alt="" />
         </div>
 
-      <div className="pb-[30px]">
-        <h3 className='text-[20px] font-[600] pb-[20px]  ' >
-        Add value to your existing products
-        </h3>
-        <p>
-        Offer digital downloads alongside your online course or coaching product. Or use digital downloads as order bumps, bundles, or upsells to boost your bottom line.      </p>
+       
 
       </div>
-      <div className="pb-[30px]">
-        <h3 className='text-[20px] font-[600] pb-[20px]  ' >
-        Monetize in new ways
-        </h3>
-        <p>
-        Expand your revenue streams and capture more sales with ebooks, podcasts, how-to guides, webinars, and more.      </p>
+      {/* 1 */}
+
+      {/* 2 */} 
+      <div className="bg-[#f7f5f5] py-[70px] text-[rgb(27,73,66)] ">
+        <h1 className='text-[30px] lg:text-[50px] font-[400] tracking-[-0.3px] leading-[120%] text-center pb-[20px] '>Easily create a digital coaching business</h1>
+        <p className='text-center pb-[20px] lg:text-[25px] tracking-[-0.16px] leading-[140%]'>Enrich your online business with high-value virtual coaching products. Host private or small group coaching sessions in three simple steps.</p>
+
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 content-center pl-[90px]  py-[60px] lg:px-[60px] lg:pl-[50px] lg:py-[70px]  ">
+          <div className="">
+            <p className='text-[30px] font-400 pb-[10px] '>Step 1</p>
+
+            <div className=" my-0 w-[90%] bg-[rgb(27,73,66)] h-[1px] "></div>
+            <h4 className='text-[25px] font-[400] pt-[10px] leading-[110%] ' >Create your coaching<br />product </h4>
+            <p className='pt-[20px] pb-[20px] pr-[50px]  lg:pr-[50px] ' >Create, sell, and manage all aspects of your coaching business on Teachable. Sell your digital coaching services solo or alongside your course or digital download..</p>
+          </div>
+          <div className="">
+            <p  className='text-[30px] font-400 pb-[10px] ' >Step 2</p>
+            <div className="w-[90%] bg-[rgb(27,73,66)] h-[1px] "></div>
+            <h4 className='text-[25px] font-[400] pt-[10px] leading-[110%]  ' >Upload your content</h4>
+            <p className='pt-[20px] pb-[20px] pr-[50px]  lg:pr-[50px] '> Customize content based on your audience’s needs. Create milestones, schedule meetings, set-up video calls, send messages and files, and more with coaching at Teachable.</p>
+          </div>
+          <div className="">
+            <p className='text-[30px] font-400 pb-[10px] '>Step 3</p>
+            <div className="w-[90%] bg-[rgb(27,73,66)] h-[1px] "></div>
+            <h4 className='text-[25px] font-[400] pt-[10px] leading-[110%]' >Customize and sell</h4>
+            <p className='pt-[20px] pb-[20px] pr-[50px]  lg:pr-[50px] '>Offer a professional learning experience to your audience with our easy-to-use, customizable sales page.</p>
+          </div>
+        </div>
       </div>
-                 
+      {/* 2 */}
+
+     {/* 3 */}
+      <div className="bg-[#127062] text-white p-[50px] lg:p-[60px] ">
+        <h2 className='text-[25px] md:text-[30px] text-center ' >Features for all types of coaching</h2>
+        <p className='text-center pt-[10px] pb-[30px] ' >Building or scaling your online business is easy with these convenient coaching tools.</p>
+
+        <div className="lg:grid lg:grid-cols-2 gap-[20px] ">
+          <div className="">
+            <img className="w-[100%] h-[100%] pb-[20px] " src = {require('./assets/c1.avif')} alt="" />
+          </div>
+          <div className="text-left  ">
+              <h3  className='text-[20px] lg:text-[35px] font-[500] pb-[10px]  ' >Payment processing and more</h3>
+              <p className='leading-[145%] tracking-[-0.27px] ' >Teachable:pay is an automated way to get paid, manage payouts, and sell more confidently. Get a simple, reliable checkout system, fraud protection, tax-inclusive pricing, global currency conversion, automatic payouts, and more. Plus, enjoy zero transaction fees on Pro and Business plans.
+              </p>
+
+              <h3 className='text-[20px] lg:text-[35px] font-[500]  pb-[10px] pt-[20px] ' >A personal touch</h3>
+              <p className='leading-[145%] tracking-[-0.27px]  '>Our effortless drag-and-drop builder and customizable templates mean you can personalize your coaching products to align with your style and branding. Plus, you can easily manage, send assignments and files, schedule appointments, and keep your clients on track with their goals.</p>
+          </div>
+
+        </div> 
+        <div className="lg:grid lg:grid-cols-2 gap-[20px] pt-[70px] ">
+          <div className="text-left  ">
+              <h3  className='text-[20px] lg:text-[35px] font-[500] pb-[10px]  ' >Payment processing and more</h3>
+              <p className='leading-[145%] tracking-[-0.27px] ' >Teachable:pay is an automated way to get paid, manage payouts, and sell more confidently. Get a simple, reliable checkout system, fraud protection, tax-inclusive pricing, global currency conversion, automatic payouts, and more. Plus, enjoy zero transaction fees on Pro and Business plans.
+              </p>
+
+              <h3 className='text-[20px] lg:text-[35px] font-[500] pb-[10px] pt-[20px] ' >A personal touch</h3>
+              <p className='leading-[145%] tracking-[-0.27px]  '>Our effortless drag-and-drop builder and customizable templates mean you can personalize your coaching products to align with your style and branding. Plus, you can easily manage, send assignments and files, schedule appointments, and keep your clients on track with their goals.</p>
+          </div>
+          <div className="">
+            <img className="w-[100%] h-[100%] " src = {require('./assets/c2.avif')} alt="" />
+          </div>
+
+        </div> 
       </div>
-    </div>
+      {/* 3 */}
 
-    <div className="bg-[#20c997] p-[50px] ">
-      <h1 className='text-[25px] md:text-[30px] font-[600] lg:text-[40px] text-center '>
-      Try us out for free
-      </h1>
-      <p className='text-center xl:text-[20px] px-[20px] pb-[20px] lg:px-[80px] '>
-      Upload your first download, create your first course, sell them together as a bundle—you can do any (or all) of that on a free plan.
-      </p>
-      <button className='bg-[#363636] rounded-lg px-[20px] py-[10px] flex justify-center m-0 w-auto my-0 mx-auto text-center text-white '>join for free</button>
-    </div>
+      {/* 4 */}
+      <div className="bg-[#20c997] p-[50px] ">
+        <h1 className='text-[25px] md:text-[30px] font-[600] lg:text-[40px] text-center '>
+        Start coaching online today
+        </h1>
+        <p className='text-center xl:text-[20px] px-[20px] pb-[20px] lg:px-[80px] leading-[145%] tracking-[-0.27px]'>
+        Our best-in-class features make creating, selling, and managing your coaching business a breeze.
+        </p>
+        <button className='bg-[#363636] rounded-lg px-[20px] py-[10px] flex justify-center m-0 w-auto my-0 mx-auto text-center text-white '>Start for free</button>
+      </div>
+      {/* 4 */}
 
-    <div className="py-[80px] px-[30px] ">
-      <h3 className='text-[25px] md:text-[30px] text-center px-[50px] pb-[20px]  ' >
-      Every journey needs a guide—we’re yours
-      </h3>
-      <h3 className='text-[25px] md:text-[30px] text-center px-[50px] pb-[20px]  ' >
-      Teachable is the best platform for sharing your knowledge with confidence. And with the ability to sell online courses, coaching sessions, and digital downloads in one place, you get the best of it all:
-      </h3>
-<div className="lg:grid lg:grid-cols-2 ">
-      <p className='flex pb-[25px] text-center text-[20px] justify-center '>  <img className=" pr-[10px]" src = {require('./assets/icn.png')} alt="" />High-quality student experiences</p>
-      <p className='flex pb-[25px] text-center text-[20px] justify-center '><img className=" pr-[10px] " src = {require('./assets/icn.png')} alt="" />Flexibility to sell what you want</p>
-      <p className='flex pb-[25px] text-center text-[20px] justify-center'><img className="  pr-[10px]" src = {require('./assets/icn.png')} alt="" />Power to grow your earning potential</p>
-    </div>
-    </div>
+      {/* 5 */}
+      <div className="bg-[#f7f5f5] p-[40px] lg:p-[60px] text-[rgb(27,73,66)] ">
+        <h1 className='text-[30px] lg:text-[50px] font-[400] tracking-[-0.3px] leading-[120%] text-center pb-[20px] '>Coach spotlight</h1>
+        <p className='text-center pb-[20px] lg:text-[25px] tracking-[-0.16px] leading-[140%]'>Meet some professional coaches within the Teachable community and explore their online coaching businesses.</p>
 
-    <div className="bg-[#e7e7e7] py-[70px] ">
-      <h1 className='text-[30px] lg:text-[35px] font-[600] text-center pb-[50px] '>Sell anything in minutes</h1>
-      <p className='text-center pb-[50px]'> Upload a file, set a price, and start selling fast—simple as that.</p>
-
-      <img className="w-[100%] h-[100%] " src = {require('./assets/2.gif')} alt="" />
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 content-center pl-[90px] md:pl-[250px] py-[60px] lg:px-[60px] lg:pl-[50px] lg:py-[70px]  ">
-        <div className="">
-          <p className=''>1</p>
-
-          <div className=" my-0 w-[260px] bg-black h-[1px] "></div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:gap-[30px] ">
           
-          <p className='pt-[20px] pb-[20px] pr-[50px] md:pr-[230px] lg:pr-[50px] ' >Click Create New Download from your Teachable admin.</p>
-        </div>
-        <div className="">
-          <p>2</p>
-          <div className="w-[260px] bg-black h-[1px] "></div>
-          <p className='pt-[20px] pb-[20px] pr-[50px] md:pr-[230px] lg:pr-[50px] '> Click Create New Download from your Teachable admin.</p>
-        </div>
-        <div className="">
-          <p>3</p>
-          <div className="w-[260px] bg-black h-[1px] "></div>
-          <p className='pt-[20px] pb-[20px] pr-[50px] md:pr-[230px] lg:pr-[50px] '>Click Create New Download from your Teachable admin.</p>
-        </div>
+          <div className="bg-white mb-[30px]  ">
+            <img className="w-full " src = {require('./assets/c3.avif')} alt="" />
+           
+              <div className="p-[20px] ">
+              <h4 className='text-[25px] font-[400] pt-[10px] leading-[110%] ' >Fitness Bootcamp </h4>
+              <p className='pt-[20px] pb-[20px] pr-[50px]  lg:pr-[50px] ' >Greg started out as a personal trainer, but knew he didn’t want to stop there. With his experience as a trainer and researcher, he launched a fitness course online.</p>
+              <p className=' border-b-2 w-[50%] cursor-pointer border-[rgb(27,73,66)] pb-[5px] mt-[60px] ' >See it in action </p> 
+            </div>
+          </div>
+
+          <div className="bg-white mb-[30px] ">
+
+            <img className="w-full " src = {require('./assets/c4.avif')} alt="" />
+              <div className="p-[20px] ">
+                <h4 className='text-[25px] font-[400] pt-[10px] leading-[110%]  ' >UAV Coach</h4>
+                <p className='pt-[20px] pb-[20px] pr-[50px]  lg:pr-[50px] '>With more than 40,000 students, UAV Coach’s signature drone training course helps students pass their FAA certification exam.</p>
+                <p className=' border-b-2 w-[50%] cursor-pointer border-[rgb(27,73,66)] pb-[5px] mt-[60px] ' >See it in action </p>
+              </div>
+          </div>
+          
+          <div className="bg-white mb-[30px] ">
+            <img className=" w-full" src = {require('./assets/c5.avif')} alt="" />
+              <div className="p-[20px] ">
+                <h4 className='text-[25px] font-[400] pt-[10px] leading-[110%]' >A-Levels Tutoring</h4>
+                <p className='pt-[20px] pb-[20px] pr-[50px]  lg:pr-[50px] '>Why confine learning to in-person classes that require upfront rental costs for classroom space? With online courses, Tailored Tutors helps students ace your A-level exams from anywhere; and you can do the same.</p>
+                <p className=' border-b-2  w-[50%]  cursor-pointer border-[rgb(27,73,66)] pb-[5px] mt-[60px] ' >See it in action </p>
+              </div>
+          </div>
+
+        
       </div>
-    </div>
+      </div>
+      {/* 5 */}
 
-    <div className="p-[40px] lg:p-[80px] xl-[80px] ">
-    <h1 className='text-center text-[30px] font-[500] lg:text-[70px] pb-[30px] '>
-    Your questions, answered
-    </h1>
-    {/* first dropdown */}
-    <div className="">
-      <div className="flex justify-between">
-        <div className="text-[25px] lg:text-[40px] pt-[20px] pb-[20px] ">
-          <h3>Why should i sell my digital download on Teachable? </h3>
-         
-        </div>
-  
-        <div className="dropdown">
-        {
-        !dropdown  ?
-
-          <div className="">
-          <button className='text-[25px] pt-[20px] lg:text-[40px] ' onClick={open}>+</button>
+      {/* 6 */}
+      <div className="p-[40px] lg:p-[80px] xl:p-[80px] ">
+      <h1 className='text-center text-[30px] font-[500] lg:text-[70px] pb-[30px] '>
+      FAQ
+      </h1>
+      {/* first dropdown */}
+      <div className="">
+        <div className="flex justify-between">
+          <div className="text-[25px] lg:text-[30px] pt-[20px] pb-[20px] ">
+            <h3>Why should I offer coaching on Teachable? </h3>
+          
           </div>
-          :
-          <div className="">
-          <button className='text-[25px] pt-[20px] lg:text-[40px] ' onClick={close}>-</button>
-          </div>
-
-          }
-        </div>
-
-        </div>
-        <div className=" my-0 w-full bg-black h-[1px] "></div>
-
-        <div className="">   
-        {
+    
+          <div className="dropdown">
+          {
           !dropdown  ?
-          ""
-          :
-          <div className="">
-            <p>Digital downloads are perfect for building your audience by providing value for a low cost (or even for free). Selling digital downloads alongside courses or coaching products on Teachable is an easy way to centralize your business while diversifying your revenue stream. 
 
-Plus, you can use digital downloads as order bumps, bundles, and upsells to have even more ways to monetize your knowledge.</p>
-          </div>
-        }
-       </div>
+            <div className="">
+            <button className='text-[25px] pt-[20px] lg:text-[40px] ' onClick={open}>+</button>
+            </div>
+            :
+            <div className="">
+            <button className='text-[25px] pt-[20px] lg:text-[40px] ' onClick={close}>-</button>
+            </div>
 
-
-
-      
-    </div>
-    {/* first dropdown end */}
-
-    {/* second dropdown */}
-    <div className="">
-      <div className="flex justify-between">
-        <div className="text-[25px] lg:text-[40px] pt-[25px] pb-[20px] ">
-          <h3>What type of digital downloads can i sell?</h3>
-        </div>
-  
-        <div className="dropdown2">
-        {
-        !dropdown2  ?
-
-          <div className="">
-          <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={ope}>+</button>
-          </div>
-          :
-          <div className="">
-          <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={clos}>-</button>
+            }
           </div>
 
+          </div>
+          <div className=" my-0 w-full bg-black h-[1px] "></div>
+
+          <div className="">   
+          {
+            !dropdown  ?
+            ""
+            :
+            <div className="">
+              <p>Offering online coaching programs is a great way to add even more value to your online course and digital download offerings. We help you create professional coaching products to grow or scale your business—plus launch a coaching website that supports your clients.
+              </p>
+            </div>
           }
         </div>
 
-        </div>
-        <div className=" my-0 w-full bg-black h-[1px] "></div>
-        <div className="">   
-        {
+
+
+        
+      </div>
+      {/* first dropdown end */}
+
+      {/* second dropdown */}
+      <div className="">
+        <div className="flex justify-between">
+          <div className="text-[25px] lg:text-[30px] pt-[25px] pb-[20px] ">
+            <h3>What type of coaching can I sell?</h3>
+          </div>
+    
+          <div className="dropdown2">
+          {
           !dropdown2  ?
-          ""
-          :
-          <div className="">
-            <p>Almost anything! From templates to ebooks, podcasts, and more—we’ve even made sure you can reach your audience in new, meaningful ways with a wide variety of digital download formats to choose from. What can’t you sell on Teachable?</p>
-          </div>
-        }
-       </div>
 
+            <div className="">
+            <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={ope}>+</button>
+            </div>
+            :
+            <div className="">
+            <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={clos}>-</button>
+            </div>
 
-
-      
-    </div>
-{/* second dropdown enmd */}
-
-    {/* third dropdown */}
-    <div className="">
-      <div className="flex justify-between ">
-        <div className="text-[25px] lg:text-[40px] pb-[20px] pt-[25px] ">
-          <h3>How many digital downloads can i sell on a free plan?</h3>
-        </div>
-  
-        <div className="dropdown">
-        {
-        !dropdown3  ?
-
-          <div className="">
-          <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={opn}>+</button>
-          </div>
-          :
-          <div className="">
-          <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={clse}>-</button>
+            }
           </div>
 
+          </div>
+          <div className=" my-0 w-full bg-black h-[1px] "></div>
+          <div className="">   
+          {
+            !dropdown2  ?
+            ""
+            :
+            <div className="">
+              <p>With Teachable, you can easily create one-on-one and group coaching products. Our no-code platform allows you to create milestones to schedule meetings, set-up video calls, send messages and files, and more.
+
+              </p>
+            </div>
           }
         </div>
 
-        </div>
-        <div className=" my-0 w-full bg-black h-[1px] "></div>
-        <div className="">   
-        {
+
+
+        
+      </div>
+  {/* second dropdown enmd */}
+
+      {/* third dropdown */}
+      <div className="">
+        <div className="flex justify-between ">
+          <div className="text-[25px] lg:text-[30px] pb-[20px] pt-[25px] ">
+            <h3>How many coaching products can I sell on a free plan?</h3>
+          </div>
+    
+          <div className="dropdown">
+          {
           !dropdown3  ?
-          ""
-          :
-          <div className="">
-            <p>You can create and sell one digital download when you join for free. But if you want access to unlimited digital downloads, join a Basic or Pro plan on Teachable.</p>
-          </div>
-        }
-       </div>
 
+            <div className="">
+            <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={opn}>+</button>
+            </div>
+            :
+            <div className="">
+            <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={clse}>-</button>
+            </div>
 
-
-      
-    </div>
-{/* third dropdown enmd */}
-
-    {/* fourth dropdown */}
-    <div className="">
-      <div className="flex justify-between ">
-        <div className="text-[25px] lg:text-[40px] pb-[20px] pt-[25px] ">
-          <h3>What if i've never sold something online before?</h3>
-        </div>
-  
-        <div className="dropdown">
-        {
-        !dropdown4  ?
-
-          <div className="">
-          <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={op}>+</button>
-          </div>
-          :
-          <div className="">
-          <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={cls}>-</button>
+            }
           </div>
 
+          </div>
+          <div className=" my-0 w-full bg-black h-[1px] "></div>
+          <div className="">   
+          {
+            !dropdown3  ?
+            ""
+            :
+            <div className="">
+              <p>You can create and sell one coaching product when you join for free. Our Basic, Pro and Business plans offer unlimited coaching products. View our pricing plans here.
+
+              </p>
+            </div>
           }
         </div>
 
-        </div>
-        <div className=" my-0 w-full bg-black h-[1px] "></div>
-        <div className="">   
-        {
-          !dropdown4  ?
-          ""
-          :
-          <div className="">
-            <p>Don’t worry, you’ve come to the right place. Get started on our Free plan and we’ll guide you through our easy-to-use platform, so you can feel confident about starting your own online business.</p>
+
+
+        
+      </div>
+  {/* third dropdown enmd */}
+
+      {/* fourth dropdown */}
+      <div className="">
+        <div className="flex justify-between ">
+          <div className="text-[25px] lg:text-[30px] pb-[20px] pt-[25px] ">
+            <h3>What if i've never sold something online before?</h3>
           </div>
-        }
-       </div>
+    
+          <div className="dropdown">
+          {
+          !dropdown4  ?
+
+            <div className="">
+            <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={o}>+</button>
+            </div>
+            :
+            <div className="">
+            <button className="text-[25px] pt-[20px] lg:text-[40px] " onClick={cl}>-</button>
+            </div>
+
+            }
+          </div>
+
+          </div>
+          <div className=" my-0 w-full bg-black h-[1px] "></div>
+          <div className="">   
+          {
+            !dropdown4  ?
+            ""
+            :
+            <div className="">
+              <p>Don’t worry, you’ve come to the right place. Get started on our Free plan and we’ll guide you through our easy-to-use platform, so you can feel confident about starting your own online business.</p>
+            </div>
+          }
+        </div>
 
 
+
+        
+      </div>
+  {/* fourth dropdown enmd */}
+
+
+      </div>
+      {/* 6 */}
+      {/* 8 */}
+      <div className="bg-[#20c997] p-[50px] ">
+        <h1 className='text-[30px] md:text-[30px] font-[600] lg:text-[40px] text-center  leading-[145%] tracking-[-0.27px] '>
+       Create your proffessional coaching product
+        </h1>
+        <p className='text-center xl:text-[20px] px-[20px] pb-[20px] lg:px-[80px] leading-[145%] tracking-[-0.27px]'>
+       Get started building or scaling the online business of your dreams.
+        </p>
+        <button className='bg-[#363636] rounded-lg px-[20px] py-[10px] flex justify-center m-0 w-auto my-0 mx-auto text-center text-white '>Start for free</button>
+      </div>
+      {/* 8 */}
 
       
-    </div>
-{/* fourth dropdown enmd */}
-
-
-    </div>
-
-    <div className="bg-[#20c997] p-[50px] ">
-      <h1 className='text-[30px] lg:text-[60px] text-center font-[600] ' >
-      Sell confidently on Teachable
-      </h1 >
-      <p className='text-[20px] lg:text-[26px] text-center pb-[15px] px-[50px] '>Digital downloads, courses, and coaching—all in one place. With industry-leading support and fraud protection</p>
-
-      <button className='bg-[#363636] px-[20px] py-[10px] flex justify-center m-0 w-auto my-0 mx-auto text-center text-white rounded-lg '>join for free</button>
-    </div>
-
 
     </div>
   );
