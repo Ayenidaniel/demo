@@ -36,60 +36,75 @@ function App() {
 
   return (
     
-    <div className="  ">
+    <div className="bg-[rgb(250,250,250)]  ">
    {/* 1 */}
       <div className="grid grid-cola-1 lg:grid-cols-2 bg-[rgb(27,73,66)] mb-[20px] lg:p-[80px]  ">
           <div className=" py-[40px] px-[60px] lg:p-0 text-white ">
               <h1 className='text-[35px] md:text-[30px] font-[300] lg:text-[45px] text-left pb-[20px] '>
-              teachable:pay
+              Monetize your knowledge with best-in-class features
               </h1>
-              <p className='text-left text-[25px] lg:text-[35px]    leading-[145%] tracking-[-0.27px]'>
-              Sell confidently, earn powerfully
+              <p className='text-left text-[15px] lg:text-[25px] pb-[15px]   leading-[145%] tracking-[-0.27px]'>
+              Get all the tools you need to build, grow, and manage a thriving online course and coaching business.
 
               </p>
-              <p  className='text-left text-[25px] lg:text-[35px] pb-[20px]  leading-[145%] tracking-[-0.27px]'>
-              Learn how Teachable automates, streamlines, and scales your business—so you can spend more time transforming students’ lives with the power of knowledge.
-              </p>
-              <button className='bg-[#20c997] rounded-lg p-[15px] flex justify-start w-auto text-left text-black '>Start for free</button>
+           
+              <button className='bg-[#20c997] rounded-lg p-[15px] flex justify-center lg:justify-start w-full text-center lg:w-auto lg:text-left text-black '>Start for free</button>
           </div>
 
           <div className="">
-          <img className="w-[100%] h-[100%] p-[50px] lg:p-0" src = {require('./assets/tp1.avif')} alt="" />
+          <img className="w-[100%] h-[100%] p-[50px] lg:p-0" src = {require('./assets/af1.avif')} alt="" />
           </div>
       </div>
       {/* 1*/}
 
+      {/* first */}
+    {/* 2 */}
+    <div className="grid grid-cola-1 lg:grid-cols-2  lg:p-[80px]  ">
+          <div className=" py-[40px] px-[60px] lg:p-0 text-black ">
+              <h1 className='text-[35px] md:text-[30px] font-[600] lg:text-[45px] text-left pb-[20px] '>
+             Build
+              </h1>
+              <p className='text-left text-[15px] lg:text-[25px] pb-[15px]   leading-[145%] tracking-[-0.27px]'>
+              Bring your business online with the features you need to build a great product..
+
+              </p>
+           
+              <button className='bg-[#20c997] rounded-lg p-[15px] justify-start  text-center w-auto  text-black '>Start for free</button>
+          </div>
+
+          <div className="hidden md:block">
+          <img className="w-[100%] h-[100%] p-[50px] lg:p-0" src = {require('./assets/af2.avif')} alt="" />
+          </div>
+      </div>
+    {/* 2 */}
     
       {/* 3 */} 
       <div className=" py-[30px] my-0 mx-auto max-w-[350px] md:max-w-none ">
-          <h1 className='text-[30px] lg:text-[50px] font-[200] tracking-[2px] leading-[120%] text-center pb-[20px] '>Your business, simplified</h1>
-          <p className='text-center pb-[20px] lg:text-[30px] text-[35px]  leading-[145%] font-[600] '>The automated way to get paid, manage payouts, and sell confidently. No integrations necessary.</p>
-
+         
           
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 content-center md:px-[50px]  py-[20px] lg:px-[60px] lg:pl-[50px] lg:py-[70px]  ">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 content-center md:px-[50px]  py-[20px] lg:px-[60px] lg:pl-[50px] lg:py-[70px]  ">
             <div className="">
-              <div className="text-[60px] text-[#20c997]">
-              <i class="fa-solid fa-gears"></i>
-              </div>
-              <h4 className='text-[25px]  pt-[10px] leading-[110%]  font-[300] ' >Peace of mind, automated </h4>
-              <p className='pt-[20px] pb-[20px] ' >Reduce risk and protect your bottom line with fraud monitoring and chargeback support. <br /> Save time with automated sales tax calculation, collection, and remittance and filing.*"</p>
+          
+              <h4 className='text-[25px]  pt-[10px] leading-[110%]  font-[350] ' >Create with ease </h4>
+              <p className='pt-[20px] pb-[20px] ' >Whether it’s self-paced courses, cohort-based courses, or live coaching, you can do it all on Teachable. Start creating your course or coaching service quickly with our intuitive drag-and-drop builder. </p>
             </div>
 
             <div className="">
-              <div className=" text-[60px] text-[#20c997] text-center ">
-              <i class=" fa-solid fa-globe"></i>
-              </div>
-
-              <h4 className='text-[25px]  pt-[10px] leading-[110%]   font-[300] ' >Sell confidently across the globe</h4>
-              <p className='pt-[20px] pb-[20px] '> Boost checkout conversion up to 22% in global markets with Teachable's OnePrice tax-inclusive pricing option, available only on teachable:pay. <br /> Drive sales with order bumps, coupons, and more.</p>
+              
+              <h4 className='text-[25px]  pt-[10px] leading-[110%]   font-[350] ' >Get paid faster</h4>
+              <p className='pt-[20px] pb-[20px] '> Sell right away with our built-in, fully customizable sales page builder. Sell confidently with full ecommerce capabilities. Get paid quickly on your preferred schedule—monthly, weekly, or even daily—no third-party system needed, with teachable:pay.</p>
             </div>
 
             <div className="">
-              <div className="text-[60px] text-[#20c997] text-center">
-              <i class="fa-regular fa-calendar"></i>
-              </div>
-              <h4 className='text-[25px] pt-[10px] leading-[110%] font-[300] ' >Flexibility that meets your needs</h4>
-              <p className='pt-[20px] pb-[20px] '> Choose your ideal payout schedule daily, weekly, or monthly <br /> .Accept all major payment methods,including debit card, credit card,Apple Pay, and Google Pay.</p>
+              
+              <h4 className='text-[25px] pt-[10px] leading-[110%] font-[350] ' >Extend the power of the platform</h4>
+              <p className='pt-[20px] pb-[20px] '> Connect with the tools you already use and love. We offer direct integrations with MailChimp, Zapier, ConvertKit, Google Analytics, Segment, and more. Plus, use our public API to automate your workflow even more..</p>
+            </div>
+
+            <div className="">
+             
+              <h4 className='text-[25px] pt-[10px] leading-[110%] font-[350] ' >Optimize student engagement</h4>
+              <p className='pt-[20px] pb-[20px] '> Use bespoke student-side features like comments, quizzes, and certifications of completion to drive learning outcomes and student satisfaction.</p>
             </div>
 
           
@@ -97,127 +112,239 @@ function App() {
      
       </div>
       </div>
-     <p className='text-center italic' >Please read our Knowledge Base for more details on tax handling.</p>      
-
-      {/* </div> */}
-    
       {/* 3 */}
 
      {/* 4*/}
-      <div className="bg-[rgb(34,34,34)] text-white p-[50px] lg:p-[60px] mt-[40px] ">
-        <h2 className='text-[25px] md:text-[30px] text-center leading-[145%]  font-[500] ' >More than a payment gateway</h2>
-        <p className='text-center pt-[25px] pb-[30px] tracking-[2px] font-[500] text-[25px] ' >It’s your one-stop shop for worry-free business management..</p>
+      <div className="bg-[#129c73] bg-opacity-[.2] text-[rgb(27,73,66)] p-[50px] ">
+      <h1 className='text-[30px]  ' >''</h1>
 
-        <div className="lg:grid lg:grid-cols-2 gap-[20px] ">
-        
-        <div className="hidden md:block">
-                <img className="w-[100%] h-[100%] pb-[20px] lg:pt-[35px] " src = {require('./assets/tp2.avif')} alt="" />
-              </div>
-          <div className="text-left  pb-[20px] lg:pb-0 ">
-              <h3  className='text-[25px] lg:text-[35px] font-[400] pt-[35px] pb-[15px]  ' >Ready for your first sale in minutes</h3>
-              <p className='leading-[145%] tracking-[-0.27px] ' >Teachable:pay comes with your account, so all you have to do is take a few minutes to set it up.
-              </p>
-              <h3  className='text-[25px] lg:text-[35px] font-[400] pt-[35px] pb-[15px]  ' >Simple, reliable and powerful checkout</h3>
-              <p className='leading-[145%] tracking-[-0.27px] ' >Our team is constantly focused on enhancing the student checkout experience, improving conversion, and adding flexibility and sales capabilities.
-              </p>
-              <h3  className='text-[25px] lg:text-[35px] font-[400] pt-[35px] pb-[15px]  ' >Fraud protection</h3>
-              <p className='leading-[145%] tracking-[-0.27px] ' >We help you handle chargebacks and prevent fraudulent purchases to protect your bottom line.
-              </p>
-          </div>
-             
-        </div> 
+      <p className='text-[25px] lg:text-[30px]  '>Teachable made it simple to create and sell a great-looking course that started generating income immediately. What an amazing thing to be making a living doing what I've been doing all along—sharing what I know!"</p>
 
-        <div className="lg:grid lg:grid-cols-2 gap-[20px] pt-[70px] pb-[30px] ">
-
-
-          <div className="text-left pb-[20px] lg:pb-0  ">
-              <h3 className='text-[25px] lg:text-[35px] font-[400] pt-[35px] pb-[15px] ' >Taking care of taxes</h3>
-              <p className='leading-[145%] tracking-[-0.27px]  '>Teachable calculates, collects, and remits sales taxes on your behalf, so you don't have to deal with additional accounting work every quarter.*</p>
-              <h3 className='text-[25px] lg:text-[35px] font-[400] pt-[35px] pb-[15px] ' >Automatic payouts for your team</h3>
-              <p className='leading-[145%] tracking-[-0.27px]  '>When you enable BackOffice for an additional 2% transaction fee we automate commission payments monthly for your collaborators.</p>
-              <h3 className='text-[25px] lg:text-[35px] font-[400] pt-[35px] pb-[15px] ' >Tax-inclusive pricing</h3>
-              <p className='leading-[145%] tracking-[-0.27px]  '>Sell confidently into global markets and boost global checkout conversion up to 22% with tax-inclusive pricing.</p>
-          </div>
-
-          <div className="hidden md:block ">
-            <img className="w-[100%] h-[100%] lg:pt-[35px] " src = {require('./assets/tp3.avif')} alt="" />
-          </div>
-        </div> 
-        <button className='bg-[#20c997] rounded-lg px-[20px] py-[10px] flex justify-center m-0 w-auto my-0 mx-auto text-center text-black '>Start for free</button>
-
-        <p className='text-center italic py-[30px] text-[9px] '>*Please read our Knowledge Base for more details on tax handling in applicable jurisdictions.</p>
+      <p className='text-[20px] lg:text-[25px] pt-[20px] '>Marc Sabatella, Mastering MuseScore School</p>
       </div>
       {/*4 */}
 
-     {/* 5 */}
-     <div className="p-[30px] pt-[30px] md:p-[50px] lg:max-w-[800px] my-0 mx-auto flex flex-col justify-center ">
-      <h1 className='text-center text-[30px] font-[500] leading-[120%] tracking-[1.3%] ' > teachable:pay out-earns the competiton </h1>
-      <img className="w-[100%] h-[100%] py-[20px] ] flex  justify-center" src = {require('./assets/tp4.avif')} alt="" />
+
+{/* second */}
+
+    {/* 5 */}
+    <div className="grid grid-cola-1 lg:grid-cols-2  lg:p-[80px]  ">
+          <div className=" py-[40px] px-[60px] lg:p-0 text-black ">
+              <h1 className='text-[35px] md:text-[30px] font-[600] lg:text-[45px] text-left pb-[20px] '>
+              Grow
+              </h1>
+              <p className='text-left text-[15px] lg:text-[25px] pb-[15px]   leading-[145%] tracking-[-0.27px]'>
+              Take your business to greater heights—whether that’s through growing your audience or finding new ways to generate revenue.
+              </p>
+           
+              <button className='bg-[#20c997] rounded-lg p-[15px] justify-start  text-center w-auto  text-black '>Start for free</button>
+          </div>
+
+          <div className="hidden md:block">
+          <img className="w-[100%] h-[100%] p-[50px] lg:p-0" src = {require('./assets/af3.avif')} alt="" />
+          </div>
+      </div>
+    {/* 5 */}
     
-     </div>
-     {/* 5 */}
-
-     {/* 6 */}
-     <div className=" py-[30px] my-0 mx-auto max-w-[350px] md:max-w-none ">
-          <h1 className='text-[30px] lg:text-[50px] font-[200] tracking-[2px] leading-[120%] text-center pb-[20px] '>Get started in two minutes</h1>
+      {/* 6 */} 
+      <div className=" py-[30px] my-0 mx-auto max-w-[350px] md:max-w-none ">
+         
           
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 content-center md:px-[50px]  py-[20px] lg:px-[60px] lg:pl-[50px] lg:py-[70px] text-center ">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 content-center md:px-[50px]  py-[20px] lg:px-[60px] lg:pl-[50px] lg:py-[70px]  ">
             <div className="">
-              <div className="text-[30px]  text-center  flex justify-center pt-[30px] ">
-              <p className='border-[3px] rounded-[50%] w-[60px] h-[60px] border-[#20c997] border-solid  text-[#20c997]'>1</p>
-              </div>
-                <p className='pt-[20px] pb-[20px] ' >Log in to Teachable and go into payment settings.</p>
+          
+              <h4 className='text-[25px]  pt-[10px] leading-[110%]  font-[350] ' >Streamline your business </h4>
+              <p className='pt-[20px]  ' >Payment processing is one thing—with teachable:pay, you also get flexibility and peace of mind with ecommerce optimization tools, automated tax filings*, fraud monitoring, chargeback support, and more. </p>
+
+              <p className=' py-[40px] text-[10px] italic '>*Please read our Help center for more details on tax handling in applicable jurisdictions.</p>
             </div>
 
             <div className="">
-            <div className="text-[30px]  text-center  flex justify-center pt-[30px]">
-              <p className='border-[3px] rounded-[50%]  w-[60px] h-[60px] border-[#20c997] border-solid  text-[#20c997]'>2</p>
-              </div>
-              <p className='pt-[20px] pb-[20px] '> Provide your bank account payout information and currency.</p>
+              
+              <h4 className='text-[25px]  pt-[10px] leading-[110%]   font-[350] ' >Go global</h4>
+              <p className='pt-[20px] pb-[20px] '> Sell confidently anywhere in the world with tax-inclusive pricing, available only on teachable:pay. Boost global sales and checkout conversion with upsells, order bumps, enrollment caps, bundles, and more.</p>
             </div>
 
             <div className="">
-            <div className="text-[30px]  text-center  flex justify-center pt-[30px]">
-              <p className='border-[3px] rounded-[50%]  w-[60px] h-[60px] border-[#20c997] border-solid  text-[#20c997]'>3</p>
-              </div>
-                <p className='pt-[20px] pb-[20px] '> Select your payout frequency.</p>
+              
+              <h4 className='text-[25px] pt-[10px] leading-[110%] font-[350] ' >Expand and automate</h4>
+              <p className='pt-[20px] pb-[20px] '> Incentivize your students to refer their friends with student referrals. Use affiliate marketing tools to recruit partners to promote your business on Teachable. Then automate payouts to collaborators with BackOffice, available only with teachable:pay.</p>
             </div>
+
             <div className="">
-            <div className="text-[30px]  text-center  flex justify-center pt-[30px]">
-              <p className='border-[3px] rounded-[50%]  w-[60px] h-[60px] border-[#20c997] border-solid  text-[#20c997]'>4</p>
-              </div>
-                <p className='pt-[20px] pb-[20px] '> Automate payouts and tax filings for collaborators and add PayPal as a payment option for students.</p>
+             
+              <h4 className='text-[25px] pt-[10px] leading-[110%] font-[350] ' >Scale on your terms</h4>
+              <p className='pt-[20px] pb-[20px] '> Use bespoke student-side features like comments, quizzes, and certifications of completion to drive learning outcomes and student satisfaction.</p>
             </div>
 
           
 
      
       </div>
-      <h3 className='text-center text-[25px] text-[#20c997] lg:text-[35px] mt-[30px] pb-[20px] '>Confirm and you're done! </h3>
       </div>
-     {/* 6 */}
+      {/* 6 */}
 
-     {/* 7 */}
-       <div className=" bg-[rgb(27,73,66)] text-[#f7f5f5] p-[50px] lg:p-[60px] ">
-        <div className=" pb-[40px] ">
+     {/* 7*/}
+      <div className="bg-[#129c73] bg-opacity-[.2] text-[rgb(27,73,66)] p-[50px] ">
+      <h1 className='text-[30px]  ' >''</h1>
+
+      <p className='text-[25px] lg:text-[30px]  '>Teachable provides me the tools, support, and strength to see my dreams happen. Not only does Teachable boost my income, but it also boosts my confidence.”</p>
+
+      <p className='text-[20px] lg:text-[25px] pt-[20px] '>Charles Clifford Brooks III, the Working Writer</p>
+      </div>
+      {/*7 */}
+
+
+{/* third */}
+
+    {/* 8 */}
+    <div className="grid grid-cola-1 lg:grid-cols-2  lg:p-[80px]  ">
+          <div className=" py-[40px] px-[60px] lg:p-0 text-black ">
+              <h1 className='text-[35px] md:text-[30px] font-[600] lg:text-[45px] text-left pb-[20px] '>
+             Manage
+              </h1>
+              <p className='text-left text-[15px] lg:text-[25px] pb-[15px]   leading-[145%] tracking-[-0.27px]'>
+              Whether it’s compliance, taxes, or business management, we automate all the tedious tasks for your business so you can focus on what you do best.
+
+              </p>
+           
+              <button className='bg-[#20c997] rounded-lg p-[15px] justify-start  text-center w-auto  text-black '>Start for free</button>
+          </div>
+
+          <div className="hidden md:block">
+          <img className="w-[100%] h-[100%] p-[50px] lg:p-0" src = {require('./assets/af4.avif')} alt="" />
+          </div>
+      </div>
+    {/* 8 */}
+    
+      {/* 9 */} 
+      <div className=" py-[30px] my-0 mx-auto max-w-[350px] md:max-w-none ">
          
-          <p className='text-left text-[30px] lg:text-[50px]   leading-[145%] tracking-[-0.27px]'>
-          "By using teachable:pay, I just save so much time and money. Before teachable:pay, it was just a lot of stress at the end of every quarter, and then, it was costing us quite a bit to pay the accountant to do all the filing for us. Anything that can be automated so I don't have to do it is heaven to me."
-          </p>
-        </div>
-       <p>Paige Brunton : SquareSecrets</p>
-      </div>
-     {/* 7 */}
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 content-center md:px-[50px]  py-[20px] lg:px-[60px] lg:pl-[50px] lg:py-[70px]  ">
+            <div className="">
+          
+              <h4 className='text-[25px]  pt-[10px] leading-[110%]  font-[350] ' >Manage taxes with ease </h4>
+              <p className='pt-[20px] pb-[20px] ' >Do business anywhere without having to worry about tax headaches. Whether it’s remittance or tax forms, we’ll handle taxes so you don’t have to collect manually. </p>
+            </div>
 
-     {/* 8 */}
+            <div className="">
+              
+              <h4 className='text-[25px]  pt-[10px] leading-[110%]   font-[350] ' >Gain powerful insights</h4>
+              <p className='pt-[20px] pb-[20px] '> Understand your business performance and proactively adjust strategies using our advanced data reporting. We provide intuitive reporting on sales and student engagement to help you make data-informed decisions.
+
+              </p>
+            </div>
+
+            <div className="">
+              
+              <h4 className='text-[25px] pt-[10px] leading-[110%] font-[350] ' >Extend the power of the platform</h4>
+              <p className='pt-[20px] pb-[20px] '> Connect with the tools you already use and love. We offer direct integrations with MailChimp, Zapier, ConvertKit, Google Analytics, Segment, and more. Plus, use our public API to automate your workflow even more..</p>
+            </div>
+
+            <div className="">
+             
+              <h4 className='text-[25px] pt-[10px] leading-[110%] font-[350] ' >Stay protected</h4>
+              <p className='pt-[20px] pb-[20px] '> We offer industry-leading fraud protection, encryption, and backup capabilities so you stay fully protected and in control of your business and data. Plus, with an uptime of 99.99%, we ensure outages won’t knock you out.
+
+              </p>
+            </div>
+
+          
+
+     
+      </div>
+      </div>
+      {/* 9 */}
+
+     {/* 10*/}
+      <div className="bg-[#129c73] bg-opacity-[.2] text-[rgb(27,73,66)] p-[50px] ">
+      <h1 className='text-[30px]  ' >''</h1>
+
+      <p className='text-[25px] lg:text-[30px]  '>I came from Udemy 5 years ago, looking to host my own school with my own rules. I wanted to focus on courses and Teachable provided a fully featured solution, saving me months and years of development work. I really love the peace of mind Teachable is providing me: I can focus on my courses and students knowing that they have my back on the technical end.”
+
+      </p>
+
+      <p className='text-[20px] lg:text-[25px] pt-[20px] '>Maxime Britto, Purple Giraffe</p>
+      </div>
+      {/*10 */}
+
+{/* fourth */}
+
+
+ {/* 11 */}
+ <div className="grid grid-cola-1 lg:grid-cols-2  lg:p-[80px]  ">
+          <div className=" py-[40px] px-[60px] lg:p-0 text-black ">
+              <h1 className='text-[35px] md:text-[30px] font-[600] lg:text-[45px] text-left pb-[20px] '>
+              Support
+              </h1>
+              <p className='text-left text-[15px] lg:text-[25px] pb-[15px]   leading-[145%] tracking-[-0.27px]'>
+              No matter where you are on your business journey, we get you the support you need, every step of the way.
+
+              </p>
+           
+              <button className='bg-[#20c997] rounded-lg p-[15px] justify-start  text-center w-auto  text-black '>Start for free</button>
+          </div>
+
+          <div className="hidden md:block">
+          <img className="w-[100%] h-[100%] p-[50px] lg:p-0" src = {require('./assets/af5.avif')} alt="" />
+          </div>
+      </div>
+    {/* 11 */}
+    
+      {/* 12 */} 
+      <div className=" py-[30px] my-0 mx-auto max-w-[350px] md:max-w-none ">
+         
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 content-center md:px-[50px]  py-[20px] lg:px-[60px] lg:pl-[50px] lg:py-[70px]  ">
+            <div className="">
+          
+              <h4 className='text-[25px]  pt-[10px] leading-[110%]  font-[350] ' >Get personalized guidance </h4>
+              <p className='pt-[20px] pb-[20px] ' >From helping you set up your school to mapping out your launch strategy, our dedicated customer success team is here to help. They host live group coaching sessions three times a week, every week.
+
+               </p>
+            </div>
+
+            <div className="">
+              
+              <h4 className='text-[25px]  pt-[10px] leading-[110%]   font-[350] ' >Join the community</h4>
+              <p className='pt-[20px] pb-[20px] '> Our exclusive member community, teachable:hq, lets you connect with peers, build a valuable network, and get exclusive content to help you grow.
+
+              </p>
+            </div>
+
+            <div className="">
+              
+              <h4 className='text-[25px] pt-[10px] leading-[110%] font-[350] ' >Learn from the best</h4>
+              <p className='pt-[20px] pb-[20px] '>Get best practices and insider know-how through our exclusive programming which includes free live events, the Teachable blog, and our flagship training program, teachable:u. Plus, our award-winning customer support team is here to help with any issues you may have, whether through email or live chat.
+
+              </p>
+            </div>
+
+            <div className="">
+             
+              <h4 className='text-[25px] pt-[10px] leading-[110%] font-[350] ' >Work with experts</h4>
+              <p className='pt-[20px] pb-[20px] '>Take your business to the next level with help from experienced professionals, exclusive to Teachable, in everything from marketing to web design to course-building.
+
+              </p>
+            </div>
+
+          
+
+     
+      </div>
+      </div>
+      {/* 12 */}
+
+     {/* 13 */}
      <div className="bg-[#20c997] p-[50px] ">
         <h1 className='text-[30px] md:text-[30px] font-[400] lg:text-[40px] text-center  leading-[145%] tracking-[-0.27px] pb-[20px] '>
-        Make the most out of your money with <span className='font-[600] '>teachable:pay</span> 
+     Turn your knowledge into a profitable online business with Teachable.
         </h1>
       
-        <button className='bg-[#363636] rounded-lg px-[20px] py-[10px] flex justify-center m-0 w-auto my-0 mx-auto text-center text-white '>Start for free</button>
+        <button className='bg-[#202020] rounded-lg px-[20px] py-[10px] flex justify-center m-0 w-auto my-0 mx-auto text-center text-white '>Start for free</button>
       </div>
-      {/* 8 */}
+      {/* 13 */}
 
       
 
