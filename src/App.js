@@ -3,36 +3,7 @@ import { useState } from "react";
 
 function App() {
 
-  const[dropdown8, setDropdown8] = useState(false)
-  const[dropdown5, setDropdown5] = useState(false)
-  const[dropdown6, setDropdown6] = useState(false)
-  const[dropdown7, setDropdown7] = useState(false)
  
-
-  const open = () => {
-    setDropdown5(true)
- }
-   const close = () => {
-    setDropdown5(false)
- }
-  const ope = () => {
-    setDropdown6(true)
- }
-   const clos = () => {
-    setDropdown6(false)
- }
-  const opn = () => {
-    setDropdown7(true)
- }
-   const clse = () => {
-    setDropdown7(false)
- }
-  const op = () => {
-    setDropdown8(true)
- }
-   const cls = () => {
-    setDropdown8(false)
- }
 
   return (
     
